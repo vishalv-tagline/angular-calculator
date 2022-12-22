@@ -1,0 +1,50 @@
+<div class="container2">
+    <div class="buttons">
+        <h1 class="heding">Calculator</h1>
+        <input class="search-text" (keypress)="check($event)" (keypress)="notChar($event)" type="text" name="ans"
+            id="ans" placeholder="0" />
+        <div>
+            <button value="1" (click)="val($event)">1</button>
+            <button value="2" (click)="val($event)">2</button>
+            <button value="3" (click)="val($event)">3</button>
+            <button style="background-color: #ffb00d; color: black" value="+" (click)="val($event)">
+                +
+            </button>
+        </div>
+        <div>
+            <button value="4" (click)="val($event)">4</button>
+            <button value="5" (click)="val($event)">5</button>
+            <button value="6" (click)="val($event)">6</button>
+            <button style="background-color: #ffb00d; color: black" value="-" (click)="val($event)">
+                -
+            </button>
+        </div>
+        <div>
+            <button value="7" (click)="val($event)">7</button>
+            <button value="8" (click)="val($event)">8</button>
+            <button value="9" (click)="val($event)">9</button>
+            <button style="background-color: #ffb00d; color: black" value="*" (click)="val($event)">
+                x
+            </button>
+        </div>
+        <div>
+            <button value="0" (click)="val($event)">0</button>
+            <button value="00" (click)="val($event)">00</button>
+            <button value="." (click)="val($event)">.</button>
+            <button style="background-color: #ffb00d; color: black" value="/" (click)="val($event)">
+                /
+            </button>
+        </div>
+        <div>
+            <button style="width: 150px; background-color: red" value="AC" (click)="clearAll($event)">
+                AC
+            </button>
+            <button va.lue="del" (click)="onedelete($event)">C</button>
+            <button style="width: 125px; background-color: #187141" (click)="answer()" value="=">
+                =
+            </button>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
